@@ -2,8 +2,6 @@
 
 A simple, responsive weather lookup app built with **vanilla HTML, CSS, and JavaScript**. Search any city and get live current weather conditions — no API key, no signup, no backend required.
 
-🔗 **Live Demo:** [add your GitHub Pages link here]
-
 ---
 
 ## Features
