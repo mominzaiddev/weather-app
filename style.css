@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #10151F;
+  --card: #1B2333;
+  --text: #F2F4F8;
+  --muted: #8B93A7;
+  --accent: #5B9DF9;
+  --border: #2A3348;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+}
+
+.app h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--card);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.search-form input:focus {
+  border-color: var(--accent);
+}
+
+.search-form button {
+  padding: 12px 20px;
+  background: var(--accent);
+  color: #0B1220;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.search-form button:hover {
+  opacity: 0.9;
+}
+
+.status {
+  font-size: 14px;
+  color: var(--muted);
+  min-height: 20px;
+  margin-bottom: 8px;
+}
+
+.status.error {
+  color: #F2857A;
+}
+
+.weather-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  margin-top: 8px;
+}
+
+.weather-card.hidden {
+  display: none;
+}
+
+.location h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.location span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.main-info {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.weather-desc {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-item .label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.detail-item .value {
+  font-size: 15px;
+  font-weight: 600;
+}
